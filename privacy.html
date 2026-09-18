@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Privacy Policy — Donna</title>
+<meta name="description" content="How Donna collects, stores, protects, and deletes Amazon seller data.">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+  <div class="wrap">
+    <a class="logo" href="/">Donna<span>Central</span></a>
+    <nav>
+      <a href="/">Overview</a>
+      <a href="/privacy.html" class="active">Privacy</a>
+      <a href="/terms.html">Terms</a>
+      <a href="/contact.html">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<main class="wrap">
+
+  <h1>Privacy Policy</h1>
+  <p class="meta">Effective 2 September 2026. Last updated 19 September 2026.</p>
+
+  <p>This policy explains what data Donna collects from a connected Amazon selling account, why it is collected, where it is stored, who can reach it, and how it is deleted.</p>
+
+  <h2>1. Who we are</h2>
+  <p>Donna is operated by <strong>YUGI GREEN LTD</strong>, an Israeli company (Company No. 516051620), Kibbutz Sde Nehemya 1214500, Northern District, Israel. YUGI GREEN LTD is the data controller for the data described here. Contact: <a href="mailto:info@donnacentral.com">info@donnacentral.com</a>.</p>
+
+  <h2>2. What we collect</h2>
+
+  <h3>2.1 Amazon selling account data</h3>
+  <p>Once a seller authorizes Donna, we retrieve the following through Amazon's Selling Partner API and Amazon Ads API:</p>
+  <ul>
+    <li>Inventory quantities and fulfillment status</li>
+    <li>Order and sales history, in aggregate and per product</li>
+    <li>Advertising campaign, ad group, and targeting performance metrics</li>
+    <li>Product listing details, such as ASIN, SKU, and title</li>
+    <li>The seller identifier and marketplace of the connected account</li>
+  </ul>
+
+  <h3>2.2 Account and contact data</h3>
+  <p>The name, email address, and chosen notification channel of the person operating the account, so that we can deliver alerts and respond to requests. If you write to us at the address published on this website, we receive the name and email address you send from, so that we can reply.</p>
+
+  <h3>2.3 Authorization credentials</h3>
+  <p>The OAuth tokens that permit Donna to read the account, described in section 4.</p>
+
+  <h2>3. What we do not collect</h2>
+  <div class="box">
+    <p><strong>We do not collect buyer personal information.</strong> Donna does not request, receive, or store customer names, shipping addresses, phone numbers, email addresses, order-level customer records, or tax documents. We do not request the Amazon permission roles that grant access to that information, because no feature of Donna requires it.</p>
+  </div>
+  <p>We do not operate advertising trackers and we do not sell data to anyone. This website is a set of static pages. It sets no cookies, runs no analytics, and contains no forms &mdash; the only way to contact us is to send email to the address below. Nothing on this website is connected to any seller Amazon account data, which is processed separately as described below.</p>
+
+  <h2>4. How credentials are handled</h2>
+  <p>Long-lived OAuth refresh tokens are stored in the encrypted credential store of our workflow automation platform. <strong>They are not written to our application database</strong> and are not accessible to the parts of the system that process seller data. Short-lived access tokens, which expire approximately one hour after issue, are cached only for the duration of their validity.</p>
+  <p>Credentials are never transmitted over email or messaging services, and are never logged.</p>
+
+  <h2>5. Why we process this data</h2>
+  <p>Solely to operate the service the seller asked for: to detect stock-out risk, identify advertising spend that is not producing return, surface material changes in performance, and present recommendations for the seller's approval. We do not use one seller's data to serve another seller, and we do not use it to train machine learning models.</p>
+
+  <h2>6. Where it is stored and who can reach it</h2>
+  <p>Data is stored in a managed PostgreSQL database, encrypted at rest, and transmitted only over TLS. Access is restricted to the personnel operating the service who require it, authenticated individually. Every read of Amazon data and every action taken by the system is recorded in an audit log retained alongside the data.</p>
+
+  <h2>7. Service providers</h2>
+  <p>We share data only with the infrastructure providers required to run the service, and only to the extent each requires. Each is bound by a data processing agreement and is assessed before use:</p>
+  <table>
+    <tr><th>Provider</th><th>Purpose</th></tr>
+    <tr><td>Supabase</td><td>Managed database hosting and storage</td></tr>
+    <tr><td>n8n</td><td>Workflow automation and encrypted credential storage</td></tr>
+    <tr><td>AI model providers</td><td>Generating analysis and recommendations from account data. Data sent for this purpose is not used by those providers to train their models.</td></tr>
+    <tr><td>Telegram</td><td>Delivery of alerts and approval requests, where the seller has chosen that channel</td></tr>
+    <tr><td>GitHub Pages</td><td>Hosting of this website. Serves static pages only; receives no seller data.</td></tr>
+    <tr><td>GoDaddy</td><td>Domain registration and DNS for donnacentral.com</td></tr>
+    <tr><td>Zoho Mail</td><td>Delivery and storage of email sent to, and sent from, our published contact address</td></tr>
+  </table>
+  <p>We do not sell personal data, and we do not share seller data with other sellers, advertisers, or data brokers.</p>
+
+  <h2>8. Retention and deletion</h2>
+  <p>Amazon account data is retained for as long as the seller's authorization remains active, and is used to calculate the historical trends the service depends on.</p>
+  <p>A seller may withdraw Donna's authorization at any time from within Amazon Seller Central. Doing so immediately ends our ability to read the account. On withdrawal, or on a written deletion request to the address below, we delete the seller's stored data <strong>within 30 days</strong>, other than records we are required by law to keep.</p>
+
+  <h2>9. Your rights</h2>
+  <p>A seller may request a copy of the data we hold about them, ask for it to be corrected, or ask for it to be deleted. Write to <a href="mailto:info@donnacentral.com">info@donnacentral.com</a> and we will respond within 30 days.</p>
+
+  <h2>10. Security incidents</h2>
+  <p>If we become aware of a breach affecting a seller's data, we will notify the affected sellers and the relevant authorities as required by applicable law, without undue delay.</p>
+
+  <h2>11. Children</h2>
+  <p>Donna is a business tool and is not directed at, or intended for use by, anyone under 18.</p>
+
+  <h2>12. Changes to this policy</h2>
+  <p>If we change this policy materially, we will update the effective date above and notify connected sellers by email before the change takes effect.</p>
+
+  <h2>13. Governing law</h2>
+  <p>This policy is governed by the laws of the State of Israel, including the Protection of Privacy Law, 5741&ndash;1981.</p>
+
+  <h2>14. Contact</h2>
+  <p>YUGI GREEN LTD, Kibbutz Sde Nehemya 1214500, Northern District, Israel<br>
+  <a href="mailto:info@donnacentral.com">info@donnacentral.com</a></p>
+
+</main>
+
+<footer>
+  <div class="wrap">
+    <p>Donna is a service operated by <strong>YUGI GREEN LTD</strong> (Company No. 516051620), Kibbutz Sde Nehemya 1214500, Northern District, Israel.</p>
+    <p><a href="/">Overview</a> &middot; <a href="/terms.html">Terms of Service</a> &middot; <a href="/contact.html">Contact</a></p>
+    <p>Donna is an independent service and is not affiliated with, endorsed by, or sponsored by Amazon.com, Inc. or its affiliates.</p>
+  </div>
+</footer>
+
+</body>
+</html>
